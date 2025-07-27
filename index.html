@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxzzyy Store - Layanan Hosting Modern</title>
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Link ke CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Latar Belakang Bintang Bergerak -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Header & Navigasi -->
+    <nav class="main-nav">
+        <div class="logo">xxzzyy Store</div>
+        <div class="nav-auth">
+            <!-- Tampilan saat sudah login (tersembunyi) -->
+            <div id="user-info" class="hidden">
+                <span id="welcome-message"></span>
+                <button id="logout-button">Logout</button>
+            </div>
+            <!-- Tampilan saat belum login -->
+            <div id="auth-buttons">
+                <button id="login-trigger">Login</button>
+                <button id="register-trigger" class="primary">Daftar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kontainer Utama -->
+    <div class="container">
+        <header>
+            <h1>Layanan Hosting Generasi Baru</h1>
+            <p>Performa tinggi, keamanan terjamin, dan dukungan 24/7 untuk proyek Anda.</p>
+        </header>
+
+        <!-- Informasi Hosting -->
+        <section class="info-section">
+            <h2>Kenapa Memilih xxzzyy Store?</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Performa Cepat</h3>
+                    <p>Server kami menggunakan SSD NVMe terbaru untuk kecepatan yang maksimal.</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Keamanan Terjamin</h3>
+                    <p>Dilengkapi dengan Imunify360 dan SSL gratis untuk melindungi Anda dari ancaman.</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Dukungan 24/7</h3>
+                    <p>Tim support kami siap membantu Anda kapan saja melalui live chat dan tiket dukungan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daftar Produk -->
+        <main class="product-grid">
+            <!-- Produk 1 -->
+            <div class="product-card">
+            <div class="badge">Terlaris</div>
+                <h2>Panel Unlimited</h2>
+                <div class="price"><span>Mulai dari</span> Rp 15.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Cpu : 0%</li>
+                    <li><i class="fas fa-check"></i>Ram : 0 MB</li>
+                    <li><i class="fas fa-check"></i>Disk : 0 MB</li>
+                    <li><i class="fas fa-check"></i>Garansi 5 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card">
+                 <h2> Panel Pterodactyl 10 Gb</h2>
+                <div class="price"><span>Mulai dari</span> Rp 10.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Cpu : 10000%</li>
+                    <li><i class="fas fa-check"></i>Ram : 10024 MB</li>
+                    <li><i class="fas fa-check"></i>Disk : 10120 MB</li>
+                    <li><i class="fas fa-check"></i>Garansi 5 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+            <!-- Produk 3 -->
+            <div class="product-card">
+                 <h2> Panel Pterodactyl 9 Gb</h2>
+                <div class="price"><span>Mulai dari</span> Rp 9.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Cpu : 900%</li>
+                    <li><i class="fas fa-check"></i>Ram : 9024 MB</li>
+                    <li><i class="fas fa-check"></i>Disk : 9120 MB</li>
+                    <li><i class="fas fa-check"></i>Garansi 5 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+          <!-- Produk 4 -->
+            <div class="product-card">
+                 <h2> Panel Pterodactyl 5 Gb</h2>
+                <div class="price"><span>Mulai dari</span> Rp 5.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Cpu : 500%</li>
+                    <li><i class="fas fa-check"></i>Ram : 5024 MB</li>
+                    <li><i class="fas fa-check"></i>Disk : 5120 MB</li>
+                    <li><i class="fas fa-check"></i>Garansi 5 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+           <!-- Produk 5 -->
+            <div class="product-card">
+                 <h2> Panel Pterodactyl 4 Gb</h2>
+                <div class="price"><span>Mulai dari</span> Rp 4.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Cpu : 400%</li>
+                    <li><i class="fas fa-check"></i>Ram : 4024 MB</li>
+                    <li><i class="fas fa-check"></i>Disk : 4120 MB</li>
+                    <li><i class="fas fa-check"></i>Garansi 5 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+           <!-- Produk 6 -->
+            <div class="product-card">
+           <div class="badge">Terlaris</div>
+                 <h2> Nokos All Negara</h2>
+                <div class="price"><span>Mulai dari</span> Rp 5.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Request All Negara</li>
+                    <li><i class="fas fa-check"></i>All Otp Aplikasi</li>
+                    <li><i class="fas fa-check"></i>Whatsapp & Telegram</li>
+                    <li><i class="fas fa-check"></i>Support Bot Whatsapp</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+           <!-- Produk 7 -->
+            <div class="product-card">
+           <div class="badge">Terlaris</div>
+                 <h2>Jasa Suntik Sosmed</h2>
+                <div class="price"><span>Mulai dari</span> Rp 5.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Request Suntik Sosmed</li>
+                    <li><i class="fas fa-check"></i>Cepat & Terpercaya</li>
+                    <li><i class="fas fa-check"></i>Tiktok,Instagram,Dll</li>
+                    <li><i class="fas fa-check"></i>Garansi 30 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+           <!-- Produk 8 -->
+            <div class="product-card">
+           <div class="badge">Terlaris</div>
+                 <h2>Murid Nokos All Negara</h2>
+                <div class="price"><span>Mulai dari</span> Rp 4.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Free Website Nokos</li>
+                    <li><i class="fas fa-check"></i>Dapatkan Harga Termurah</li>
+                    <li><i class="fas fa-check"></i>Bisa Open Jasa Nokos All Negara</li>
+                    <li><i class="fas fa-check"></i>Garansi 3 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+           <!-- Produk 9 -->
+            <div class="product-card">
+            <div class="badge">Terlaris</div>
+                 <h2> Murid Suntik Sosmed</h2>
+                <div class="price"><span>Mulai dari</span> Rp 5.000 <small>/Permanet</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Free Website Suntik Sosmed</li>
+                    <li><i class="fas fa-check"></i>Dapatkan Harga Termurah</li>
+                    <li><i class="fas fa-check"></i>Bisa Open Jasa Suntik Sosmed</li>
+                    <li><i class="fas fa-check"></i>Garansi 3 Hari</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+            
+           <!-- Produk 10 -->
+            <div class="product-card">
+           <div class="badge">Terlaris</div>
+                 <h2>Jasa Create Website</h2>
+                <div class="price"><span>Mulai dari</span> Rp 20.000 <small>/Permanent</small></div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i>Free Request Tema</li>
+                    <li><i class="fas fa-check"></i>Free Request Warna</li>
+                    <li><i class="fas fa-check"></i>Free Request Fitur</li>
+                    <li><i class="fas fa-check"></i>Siap Pakai Website</li>
+                </ul>
+                <button class="order-button">Klik To Order</button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Terhubung dengan Kami</p>
+            <div class="social-links">
+                <!-- GANTI # DENGAN LINK ASLI ANDA -->
+                <a href="https://wa.me/62895419445933" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="t.me/XxxZxyy" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/ejanotalive?igsh=MWFjYXYydjNqZXEzbA==" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">© 2024 -2025 xxzzyy Store. All Rights Reserved.</div>
+        </footer>
+    </div>
+
+    <!-- Modal/Pop-up untuk Login -->
+    <div id="login-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-modal">×</button>
+            <h2>Login ke Akun Anda</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p class="form-message" id="login-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal/Pop-up untuk Register -->
+    <div id="register-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-modal">×</button>
+            <h2>Buat Akun Baru</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Pilih Username" required>
+                <input type="password" id="register-password" placeholder="Buat Password" required>
+                <button type="submit">Daftar</button>
+                <p class="form-message" id="register-message"></p>
+            </form>
+        </div>
+    </div>
+
+<audio autoplay>
+  <source src="https://files.catbox.moe/wbh1fh.mp3" type="audio/mp3">
+  Browser Anda tidak mendukung tag audio.
+</audio>
+
+    <!-- Link ke JavaScript -->
+    <script src="script.js"></script>
+</body>
+              </html>
